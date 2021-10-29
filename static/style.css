@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body {
+    background-image: linear-gradient(to right, #132e32 , #176087);
+    color: #53a2be;
+    line-height: 1.6;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+    color: #53a2be;
+    text-align: center;
+    text-decoration: underline;
+}

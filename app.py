@@ -6,7 +6,6 @@ app = Flask(__name__)
 response = requests.get('http://universities.hipolabs.com/search').json()
 
 
-
 @app.route('/')
 def main():
     return render_template('index.html', info=response)
