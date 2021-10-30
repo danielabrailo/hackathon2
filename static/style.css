@@ -9,6 +9,31 @@ body {
 
 h2 {
     color: #53a2be;
-    text-align: center;
+}
+
+h1 {
+    color: #53a2be;
     text-decoration: underline;
+    text-align: center;
+}
+
+#item  {
+    padding: 8px 20px;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+     background-color:  #53a2be;
+     text-decoration: none;
+     color: black;
+}
+
+#item:hover {
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#link {
+    color: white;
+    text-decoration: none;
 }

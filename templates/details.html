@@ -5,16 +5,33 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+    <title>Details</title>
 </head>
 <body>
-<form action = "/cgi-bin/dropdown.cgi" method = "post">
-    <select name = "dropdown">
-        {% for item in info %}
-               <option value = "{{  item['country'] }}" selected> {{ item['country'] }}</option>
+<!--<form action = "/cgi-bin/dropdown.cgi" method = "post">-->
+<!--    <select name = "dropdown" id="item">-->
+<!--        {% for item in info %}-->
+<!--               <option value = "{{  item['country'] }}" selected> {{ item['country'] }}</option>-->
+<!--        {% endfor %}-->
+<!--        </select>-->
+<!--         <input id="submit-btn" type = "submit" value = "Submit" />-->
+
+<!--</form>-->
+{% for item in info %}
+    {% if item['name'] == name %}
+        <h1>{{item['name']}}</h1>
+        <h2>Country: {{item['country']}}</h2>
+        <h2>{{item['name']}}'s web pages:</h2>
+            <ul>
+                {% for x in item['web_pages'] %}
+                <li>
+                    <a href="{{x}}" id="link">{{x}}</a>
+                </li>
+            </ul>
         {% endfor %}
-        </select>
-         <input type = "submit" value = "Submit" />
-</form>
+{% endif %}
+{% endfor %}
+
 </body>
 </html>
