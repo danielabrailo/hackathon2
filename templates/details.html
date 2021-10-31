@@ -9,15 +9,6 @@
     <title>Details</title>
 </head>
 <body>
-<!--<form action = "/cgi-bin/dropdown.cgi" method = "post">-->
-<!--    <select name = "dropdown" id="item">-->
-<!--        {% for item in info %}-->
-<!--               <option value = "{{  item['country'] }}" selected> {{ item['country'] }}</option>-->
-<!--        {% endfor %}-->
-<!--        </select>-->
-<!--         <input id="submit-btn" type = "submit" value = "Submit" />-->
-
-<!--</form>-->
 {% for item in info %}
     {% if item['name'] == name %}
         <h1>{{item['name']}}</h1>
