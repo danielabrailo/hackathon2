@@ -1,22 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-
 body {
     background-image: linear-gradient(to right, #132e32 , #176087);
-    color: #53a2be;
+    color: #d8e2dc;
     line-height: 1.6;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
 h2 {
     color: #53a2be;
+    margin: 2%;
 }
-
-h1 {
-    color: #53a2be;
-    text-decoration: underline;
+h1, h3 {
+    color: #d8e2dc;
     text-align: center;
+    margin: 2%;
 }
-
 #item  {
     padding: 8px 20px;
      text-decoration: none;
@@ -28,11 +25,9 @@ h1 {
      text-decoration: none;
      color: black;
 }
-
 #item:hover {
      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
 #link {
     color: white;
     text-decoration: none;

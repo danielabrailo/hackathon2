@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,17 +9,19 @@
     <title>Index</title>
 </head>
 <body>
+{% extends "layout.html" %}
+{% block body %}
 <h1>List of Universities:</h1>
 <h3>Check the list of Universities in the world. Click on details to see more</h3>
 <ul>
-
              {% for item in info %}
                 <li>
                     <option value = "{{  item['name'] }}" selected> {{ item['name'] }} ({{ item['country'] }}) </option>
                     <button id="item"><a href="{{url_for( 'search', name= item['name'] )}}">Details</a></button>
                 </li>
              {% endfor %}
-
 </ul>
+{% endblock %}
+
 </body>
 </html>
